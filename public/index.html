@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Russell Marina — Accueil</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header><h1>Russell Marina</h1></header>
+  <main>
+    <div class="card">
+      <h2>Bienvenue</h2>
+      <p>Application privée de gestion des catways et réservations.</p>
+      <p><a class="notice" href="/docs" target="_blank">Documentation de l'API</a></p>
+    </div>
+    <div class="card">
+      <h2>Connexion</h2>
+      <form id="login-form">
+        <p><label>Email<br><input name="email" type="email" required></label></p>
+        <p><label>Mot de passe<br><input name="password" type="password" required></label></p>
+        <p><button type="submit">Se connecter</button></p>
+        <p id="login-msg" class="error"></p>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tableau de bord — Russell Marina</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/dashboard.html">Tableau de bord</a>
+    <a href="/users.html">Utilisateurs</a>
+    <a href="/catways.html">Catways</a>
+    <a href="/reservations.html">Réservations</a>
+    <a href="/docs" target="_blank">Docs API</a>
+    <button id="logout" style="float:right">Se déconnecter</button>
+  </nav>
+  <main>
+    <div class="card">
+      <strong id="user"></strong> — <span>Nous sommes le <span id="today"></span></span>
+    </div>
+    <div class="card">
+      <h2>Réservations en cours</h2>
+      <table class="table" id="ongoing">
+        <thead><tr><th>#</th><th>Type</th><th>Client</th><th>Bateau</th><th>Début</th><th>Fin</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+  <script type="module" src="/js/ui.js"></script>
+</body>
+</html>

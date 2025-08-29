@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Utilisateurs — Russell Marina</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/dashboard.html">Tableau de bord</a>
+    <a href="/users.html">Utilisateurs</a>
+    <a href="/catways.html">Catways</a>
+    <a href="/reservations.html">Réservations</a>
+    <a href="/docs" target="_blank">Docs API</a>
+    <button id="logout" style="float:right">Se déconnecter</button>
+  </nav>
+  <main>
+    <div class="card">
+      <h2>Créer un utilisateur</h2>
+      <form id="user-form">
+        <p><label>Nom d'utilisateur<br><input name="username" required></label></p>
+        <p><label>Email<br><input type="email" name="email" required></label></p>
+        <p><label>Mot de passe<br><input type="password" name="password" minlength="8" required></label></p>
+        <p><button>Créer</button></p>
+      </form>
+    </div>
+    <div class="card">
+      <h2>Liste</h2>
+      <table class="table">
+        <thead><tr><th>Nom</th><th>Email</th><th>Actions</th></tr></thead>
+        <tbody id="users-list"></tbody>
+      </table>
+    </div>
+  </main>
+  <script type="module" src="/js/ui.js"></script>
+</body>
+</html>

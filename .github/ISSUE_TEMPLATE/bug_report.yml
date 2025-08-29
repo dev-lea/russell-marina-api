@@ -1,0 +1,28 @@
+name: Bug Report
+description: Signaler un bug
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Comportement observé
+      description: Que s’est-il passé ?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      value: |
+        1. …
+        2. …
+        3. …
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+  - type: input
+    id: env
+    attributes:
+      label: Environnement
+      placeholder: Node v20, MongoDB Atlas, navigateur…

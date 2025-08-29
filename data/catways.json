@@ -1,0 +1,121 @@
+[{
+        "catwayNumber": 1,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 2,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 3,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 4,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 5,
+        "catwayType": "long",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 6,
+        "catwayType": "short",
+        "catwayState": "En cours de réparation. Ne peut être réservée actuellement"
+    },
+    {
+        "catwayNumber": 7,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 8,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 9,
+        "catwayType": "long",
+        "catwayState": "Plusieurs grandes tâches de peinture bleue sur le ponton"
+    },
+    {
+        "catwayNumber": 10,
+        "catwayType": "long",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 11,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 12,
+        "catwayType": "short",
+        "catwayState": "grosse tâche d'huile et trou en fin de ponton"
+    },
+    {
+        "catwayNumber": 13,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 14,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 15,
+        "catwayType": "long",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 16,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 17,
+        "catwayType": "short",
+        "catwayState": "2 planches bougent lorsqu'on marche dessus"
+    },
+    {
+        "catwayNumber": 18,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 19,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 20,
+        "catwayType": "long",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 21,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 22,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    },
+    {
+        "catwayNumber": 23,
+        "catwayType": "short",
+        "catwayState": "La bite d'amarrage est légèrement désolidarisée"
+    },
+    {
+        "catwayNumber": 24,
+        "catwayType": "short",
+        "catwayState": "bon état"
+    }
+]

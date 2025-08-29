@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réservations — Russell Marina</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/dashboard.html">Tableau de bord</a>
+    <a href="/users.html">Utilisateurs</a>
+    <a href="/catways.html">Catways</a>
+    <a href="/reservations.html">Réservations</a>
+    <a href="/docs" target="_blank">Docs API</a>
+    <button id="logout" style="float:right">Se déconnecter</button>
+  </nav>
+  <main>
+    <div class="card">
+      <h2>Nouvelle réservation</h2>
+      <form id="res-form">
+        <p><label>Catway<br><select id="res-catway"></select></label></p>
+        <p><label>Client<br><input name="clientName" required></label></p>
+        <p><label>Bateau<br><input name="boatName" required></label></p>
+        <p><label>Début<br><input type="datetime-local" name="startDate" required></label></p>
+        <p><label>Fin<br><input type="datetime-local" name="endDate" required></label></p>
+        <p><button>Créer</button></p>
+      </form>
+    </div>
+    <div class="card">
+      <h2>Liste pour le catway sélectionné</h2>
+      <table class="table">
+        <thead><tr><th>Client</th><th>Bateau</th><th>Début</th><th>Fin</th><th>Actions</th></tr></thead>
+        <tbody id="res-list"></tbody>
+      </table>
+    </div>
+  </main>
+  <script type="module" src="/js/ui.js"></script>
+</body>
+</html>

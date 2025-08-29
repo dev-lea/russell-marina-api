@@ -1,0 +1,14 @@
+:root { --gap: 12px; --radius: 10px; }
+body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 0; }
+header, nav { background: #0b5aa2; color: #fff; padding: 10px 16px; }
+main { padding: 16px; }
+.card { border: 1px solid #eee; border-radius: var(--radius); padding: 16px; margin-bottom: var(--gap); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+button, input, select { padding: 8px 10px; border-radius: 8px; border: 1px solid #ddd; }
+button { cursor: pointer; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border-bottom: 1px solid #eee; padding: 8px; text-align: left; }
+.actions { display: flex; gap: 6px; }
+nav a { color: #fff; margin-right: 12px; text-decoration: none; }
+.notice { color: #0b5aa2; }
+.error { color: #b00020; }
+.success { color: #2e7d32; }

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catways — Russell Marina</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/dashboard.html">Tableau de bord</a>
+    <a href="/users.html">Utilisateurs</a>
+    <a href="/catways.html">Catways</a>
+    <a href="/reservations.html">Réservations</a>
+    <a href="/docs" target="_blank">Docs API</a>
+    <button id="logout" style="float:right">Se déconnecter</button>
+  </nav>
+  <main>
+    <div class="card">
+      <h2>Créer un catway</h2>
+      <form id="catway-form">
+        <p><label>Numéro<br><input name="catwayNumber" type="number" min="1" required></label></p>
+        <p><label>Type<br>
+          <select name="catwayType" required>
+            <option value="short">short</option>
+            <option value="long">long</option>
+          </select></label></p>
+        <p><label>État<br><input name="catwayState" required></label></p>
+        <p><button>Créer</button></p>
+      </form>
+    </div>
+    <div class="card">
+      <h2>Liste</h2>
+      <table class="table">
+        <thead><tr><th>#</th><th>Type</th><th>État</th><th>Actions</th></tr></thead>
+        <tbody id="catways-list"></tbody>
+      </table>
+    </div>
+  </main>
+  <script type="module" src="/js/ui.js"></script>
+</body>
+</html>

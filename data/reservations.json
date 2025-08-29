@@ -1,0 +1,43 @@
+[{
+        "catwayNumber": 1,
+        "clientName": "Thomas Martin",
+        "boatName": "Carolina",
+        "startDate": "2024-05-21T06:00:00Z",
+        "endDate": "2024-10-27T06:00:00Z"
+    },
+    {
+        "catwayNumber": 2,
+        "clientName": "John Doe",
+        "boatName": "Groeland",
+        "startDate": "2024-05-18T06:00:00Z",
+        "endDate": "2024-11-30T06:00:00Z"
+    },
+    {
+        "catwayNumber": 3,
+        "clientName": "Margareth Wurtz",
+        "boatName": "Sirène",
+        "startDate": "2024-06-20T06:00:00Z",
+        "endDate": "2024-08-27T06:00:00Z"
+    },
+    {
+        "catwayNumber": 7,
+        "clientName": "Ralph Laurent",
+        "boatName": "Surcouf",
+        "startDate": "2024-07-01T06:00:00Z",
+        "endDate": "2024-10-13T06:00:00Z"
+    },
+    {
+        "catwayNumber": 11,
+        "clientName": "Jack Sparrow",
+        "boatName": "Black perl",
+        "startDate": "2024-08-13T06:00:00Z",
+        "endDate": "2024-09-13T06:00:00Z"
+    },
+    {
+        "catwayNumber": 13,
+        "clientName": "Jacky Snow",
+        "boatName": "Léandra",
+        "startDate": "2024-09-18T06:00:00Z",
+        "endDate": "2024-12-23T06:00:00Z"
+    }
+]
