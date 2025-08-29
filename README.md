@@ -28,7 +28,14 @@ mongoimport --jsonArray --db marina --collection reservations --file data/reserv
 - MongoDB Atlas + Railway/Render/Fly.io. Configurer les variables d’env.
 
 ## Identifiants de test
-- Admin : `ADMIN_EMAIL` / `ADMIN_PASSWORD` (créés au boot). 
+- Email : admin@russell-port.tld
+- Mot de passe : admin1234
 
 ## Licence
 MIT
+
+### How to run (local, Windows/VS Code)
+```powershell
+npm install
+copy .env.example .env
+npm run dev
