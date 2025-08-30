@@ -6,6 +6,15 @@ import { env } from '../config/env.js';
 
 const router = express.Router();
 
+/**
+ * Authentifie un utilisateur et renvoie un JWT.
+ * @route POST /login
+ * @param {string} req.body.email - Adresse e-mail
+ * @param {string} req.body.password - Mot de passe
+ * @returns {200 {token:string,user:{email:string,username:string}}} OK
+ * @returns {400 {message:string}} Email et mot de passe requis
+ * @returns {401 {message:string}} Identifiants invalides
+ */
 // PUBLIC: /api/login
 router.post('/login', async (req, res) => {
   const { email, password } = req.body || {};

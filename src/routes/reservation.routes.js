@@ -35,6 +35,16 @@ router.get('/catways/:id/reservations/:reservationId', async (req, res) => {
   res.json(r);
 });
 
+/**
+ * Crée une réservation pour un catway donné.
+ * Contraintes: startDate < endDate ; anti-chevauchement sur le même catwayNumber.
+ * @route POST /catways/:id/reservations
+ * @param {express.Request} req - Params: { id } ; Body: { clientName, boatName, startDate, endDate }
+ * @param {express.Response} res
+ * @returns {201 Created} Réservation créée
+ * @returns {400 Bad Request} Validation invalide (dates/champs ou catway non réservable)
+ * @returns {409 Conflict} Chevauchement détecté sur ce catway
+ */
 router.post('/catways/:id/reservations', validate(schemas.reservationCreate), async (req, res, next) => {
   try {
     const catwayNumber = Number(req.params.id);
@@ -67,3 +77,4 @@ router.delete('/catways/:id/reservations/:reservationId', async (req, res) => {
 });
 
 export default router;
+
