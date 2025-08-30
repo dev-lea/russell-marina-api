@@ -34,8 +34,13 @@ mongoimport --jsonArray --db marina --collection reservations --file data/reserv
 ## Licence
 MIT
 
+## Liens de démo
+- GitHub: https://github.com/dev-lea/russell-marina-api
+- Déployé: https://russell-marina-api.onrender.com
+
 ### How to run (local, Windows/VS Code)
 ```powershell
 npm install
 copy .env.example .env
 npm run dev
+
