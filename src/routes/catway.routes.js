@@ -17,6 +17,16 @@ router.get('/catways/:id', async (req, res) => {
   res.json(c);
 });
 
+/**
+ * Crée un catway (numéro unique).
+ * Règles: catwayNumber >= 1 ; catwayType ∈ {"long","short"}.
+ * @route POST /catways
+ * @param {express.Request} req - Body: { catwayNumber:number, catwayType:string, catwayState:string }
+ * @param {express.Response} res
+ * @returns {201 Created} Catway créé
+ * @returns {400 Bad Request} Validation invalide
+ * @returns {409 Conflict} catwayNumber déjà existant
+ */
 router.post('/catways', validate(schemas.catwayCreate), async (req, res, next) => {
   try {
     const exists = await Catway.findOne({ catwayNumber: req.body.catwayNumber });
@@ -43,3 +53,4 @@ router.delete('/catways/:id', async (req, res) => {
 });
 
 export default router;
+
